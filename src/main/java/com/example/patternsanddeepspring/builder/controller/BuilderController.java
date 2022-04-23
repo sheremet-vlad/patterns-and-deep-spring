@@ -1,4 +1,4 @@
-package com.example.patternsanddeepspring.controller;
+package com.example.patternsanddeepspring.builder.controller;
 
 import com.example.patternsanddeepspring.builder.BuilderService;
 import com.example.patternsanddeepspring.builder.entity.User;
