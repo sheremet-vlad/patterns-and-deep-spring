@@ -7,8 +7,10 @@ import com.example.patternsanddeepspring.facade.entity.Stationary;
 import com.example.patternsanddeepspring.facade.entity.StationaryFactory;
 import com.example.patternsanddeepspring.facade.entity.Template;
 import com.example.patternsanddeepspring.facade.entity.TemplateFactory;
+import org.springframework.stereotype.Service;
 
 //Facade provides simple methods for client to use
+@Service
 public class DefaultEmailFacade implements EmailFacade
 {
    @Override
