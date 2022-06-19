@@ -2,11 +2,11 @@ package com.example.patternsanddeepspring.composite.entity;
 
 //Leaf node in composite pattern
 public class BinaryFile extends File{
-	private int size;
+	private int size; // protected field for File
 
    public BinaryFile(String name, int size)
    {
-      super(name);
+      super(name);// super(name, size)
       this.size = size;
    }
 
@@ -14,7 +14,7 @@ public class BinaryFile extends File{
    public void ls()
    {
       System.out.println(String.format("file: %s - %s", getName(), size));
-   }
+   } //String -> MessageFormat
 
    @Override
    public void addFile(File file)

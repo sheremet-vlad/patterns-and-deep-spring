@@ -9,7 +9,7 @@ public class Manager extends Employee {
 	
 	@Override
 	protected boolean processRequest(LeaveApplication application) {
-		switch (application.getType()) {
+		switch (application.getType()) { // use strategies, why switch case?
 		case Sick:
 			application.approve(getApproverRole());
 			return true;

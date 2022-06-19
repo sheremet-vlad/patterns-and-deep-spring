@@ -3,9 +3,6 @@ package com.example.patternsanddeepspring.composite.controller;
 import com.example.patternsanddeepspring.composite.entity.BinaryFile;
 import com.example.patternsanddeepspring.composite.entity.Directory;
 import com.example.patternsanddeepspring.composite.entity.File;
-import com.example.patternsanddeepspring.decorator.entity.HtmlEncodedMessage;
-import com.example.patternsanddeepspring.decorator.entity.Message;
-import com.example.patternsanddeepspring.decorator.entity.TextMessage;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

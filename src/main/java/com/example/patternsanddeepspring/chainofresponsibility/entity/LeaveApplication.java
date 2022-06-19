@@ -50,12 +50,12 @@ public class LeaveApplication {
 		return status;
 	}
 
-	public void approve(String approverName) {
+	public void approve(String approverName) {// better to pass the whole object of approver
 		this.status = Status.Approved;
 		this.processedBy = approverName;
 	}
 
-	public void reject(String approverName) {
+	public void reject(String approverName) {//the same
 		this.status = Status.Rejecetd;
 		this.processedBy = approverName;
 	}

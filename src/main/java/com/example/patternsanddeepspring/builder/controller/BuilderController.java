@@ -18,6 +18,7 @@ public class BuilderController
    @GetMapping("/builder")
    public UserDTO test()
    {
+      //it's not a builder it's factory method
       final User user = Utils.createUser();
       return builderService.buildUserDTO(user);
    }

@@ -16,8 +16,11 @@ public class BridgeController
 {
 
    @GetMapping("/bridge")
+   //bad method name etc
    public String factoryMethod() throws CloneNotSupportedException
    {
+
+      //it's not a bridge pattern more like wrapper
       final FifoCollection<Integer> integerFifoCollection = new Queue<>(new ArrayLinkedList<>());
       integerFifoCollection.offer(10);
 

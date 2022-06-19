@@ -1,6 +1,7 @@
 package com.example.patternsanddeepspring.chainofresponsibility.entity;
 
 //A concrete handler
+//It's not a handler. It's DTO or model. Bad idea to have business logic here
 public class ProjectLead extends Employee{
 
 	public ProjectLead(LeaveApprover successor) {

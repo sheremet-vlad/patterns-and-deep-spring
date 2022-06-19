@@ -17,17 +17,21 @@ public class AdapterObjectPoolController
    @Resource
    private BusinessCardDesigner businessCardDesigner;
 
+
+   //See comment for abstractFactory. Make it more real
    @GetMapping("/adapter")
    public String factoryMethod() throws CloneNotSupportedException
    {
+
+      //Try to combine already created patterns with the current one. For e.g. you can use factory here to get initialized objects
       final Employee employee = new Employee();
       populateEmployeeData(employee);
       final EmployeeObjectAdapter adapter = new EmployeeObjectAdapter(employee);
 
       StringBuilder resultLog = new StringBuilder("Adapter: \n");
-      resultLog.append(businessCardDesigner.designCard(adapter));
+      resultLog.append(businessCardDesigner.designCard(adapter)); // replace businessCardDesigner by JSON use Jakson lib and make spring convert object to JSON automatically
 
-      return resultLog.toString();
+      return resultLog.toString();//return employee as a JSON
    }
 
    private static void populateEmployeeData(Employee employee) {
